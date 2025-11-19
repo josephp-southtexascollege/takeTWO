@@ -10,10 +10,10 @@ const { isAuthenticated } = useAuth()
 
 const routes = [
      { path: '/takeTWO/', name: 'Home', component: HomePage },
-     { path: '/takeTWO//other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
-     { path: '/takeTWO//employees/:id', name: 'CardDetails', component: CardDetails },
-     { path: '/takeTWO//login', name: 'LoginPage', component: LoginPage },
-     { path: '/takeTWO//settings', name: 'SettingsPage', component: SettingsPage, meta: { requiresAuth: true } },
+     { path: '/takeTWO/other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
+     { path: '/takeTWO/employees/:id', name: 'CardDetails', component: CardDetails },
+     { path: '/takeTWO/login', name: 'LoginPage', component: LoginPage },
+     { path: '/takeTWO/settings', name: 'SettingsPage', component: SettingsPage, meta: { requiresAuth: true } },
 ]
 
 const router = createRouter({
