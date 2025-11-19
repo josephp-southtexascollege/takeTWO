@@ -13,7 +13,7 @@ export const useAuth = () => {
           return isAuthenticated.value
      }
      const logout = async () => {
-          await signout(auth)
+          await signOut(auth)
           router.push({ name: 'Home' })
      }    
 
