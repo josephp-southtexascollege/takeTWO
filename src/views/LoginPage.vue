@@ -25,20 +25,20 @@
 </script>
 
 <template>
-     <form class="login-form" @submit.prevent="login">
+     <form class="m-10" @submit.prevent="login">
 
           <div>
-               <label for="username">Username:
+               <label for="username" class="block mb-2 font-bold">Username:
                     <input type="text" v-model="username" placeholder="Username" />
                </label>
           </div>
 
           <div>
-               <label for="Password">Password:
+               <label for="Password" class="block mb-2 font-bold">Password:
                     <input type="password" v-model="password" placeholder="Password" />
                </label> 
           </div>
 
-          <button @click.prevent="loginUserIn" class="">LOGIN</button>
+          <button @click.prevent="loginUserIn" class="bg-green-500 mt-4 px-4 py-2 hover:bg-green-800 hover:text-white">LOGIN</button>
      </form>
 </template>
